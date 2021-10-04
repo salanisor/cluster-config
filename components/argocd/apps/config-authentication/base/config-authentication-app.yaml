@@ -14,7 +14,7 @@ spec:
   project: cluster-config
   source:
     path: components/configs/oauth/overlays/google-with-matrix
-    repoURL: https://github.com/gnunn-gitops/cluster-config.git
+    repoURL: https://github.com/salanisor/cluster-config.git
     targetRevision: master
   syncPolicy:
     automated:

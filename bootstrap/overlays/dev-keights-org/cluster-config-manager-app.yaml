@@ -11,8 +11,8 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: clusters/local.home/argocd/apps/cluster/overlays/default
-    repoURL: https://github.com/gnunn-gitops/cluster-config.git
+    path: clusters/dev-keights-org/argocd/apps/cluster/overlays/default
+    repoURL: https://github.com/salanisor/cluster-config.git
     targetRevision: master
   syncPolicy:
     automated:

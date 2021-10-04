@@ -3,7 +3,7 @@ kind: ConsoleLink
 metadata:
   name: product-catalog-gitops
 spec:
-  href: 'https://argocd-server-product-catalog-gitops.apps.home.ocplab.com'
+  href: 'https://argocd-server-product-catalog-gitops.apps.keights.org'
   location: NamespaceDashboard
   # This text will appear in a box called "Launcher" under "namespace" or "project" in the web console
   text: Product Catalog Gitops

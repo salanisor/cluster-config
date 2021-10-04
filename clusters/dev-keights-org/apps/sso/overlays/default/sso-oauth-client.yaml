@@ -5,6 +5,6 @@ metadata:
   namespace: openshift-config
 secret: "c2cb0aca-8814-4e52-a54e-1cb802052b4a"
 redirectURIs:
-- http://sso-sso.apps.home.ocplab.com/auth/realms/openshift/broker/openshift-v4/endpoint
-- https://sso-sso.apps.home.ocplab.com/auth/realms/openshift/broker/openshift-v4/endpoint
+- http://sso-sso.apps.keights.org/auth/realms/openshift/broker/openshift-v4/endpoint
+- https://sso-sso.apps.keights.org/auth/realms/openshift/broker/openshift-v4/endpoint
 grantMethod: prompt

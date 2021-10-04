@@ -22,7 +22,7 @@ spec:
                 name: central-htpasswd
                 key: password
           - name: ISSUER
-            value: https://sso-sso.apps.home.ocplab.com/auth/realms/openshift
+            value: https://sso-sso.apps.keights.org/auth/realms/openshift
           command:
             - /bin/bash
             - -c
@@ -55,7 +55,7 @@ spec:
                 exit 0
               fi
 
-              export DATA='{"name":"OpenShift","type":"oidc","uiEndpoint":"central-stackrox.apps.home.ocplab.com","enabled":true,"config":{"client_id":"stackrox","client_secret":"'${CLIENT_SECRET}'","issuer":"'$ISSUER'","mode":"post"},"validated":true,"extraUiEndpoints":[],"active":true}'
+              export DATA='{"name":"OpenShift","type":"oidc","uiEndpoint":"central-stackrox.apps.keights.org","enabled":true,"config":{"client_id":"stackrox","client_secret":"'${CLIENT_SECRET}'","issuer":"'$ISSUER'","mode":"post"},"validated":true,"extraUiEndpoints":[],"active":true}'
 
               #echo "Posting data: ${DATA}"
 

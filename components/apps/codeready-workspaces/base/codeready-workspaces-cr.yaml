@@ -5,7 +5,7 @@ metadata:
   namespace: openshift-workspaces
 spec:
   auth:
-    identityProviderURL: 'https://sso-sso.apps.home.ocplab.com'
+    identityProviderURL: 'https://sso-sso.apps.keights.org'
     identityProviderRealm: openshift
     identityProviderClientId: codeready-public
     externalIdentityProvider: true

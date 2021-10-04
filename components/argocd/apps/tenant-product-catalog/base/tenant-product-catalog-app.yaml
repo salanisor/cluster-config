@@ -14,7 +14,7 @@ spec:
   project: cluster-config
   source:
     path: tenants/product-catalog/argocd/applicationset/base
-    repoURL: https://github.com/gnunn-gitops/cluster-config.git
+    repoURL: https://github.com/salanisor/cluster-config.git
     targetRevision: master
   syncPolicy:
     automated:

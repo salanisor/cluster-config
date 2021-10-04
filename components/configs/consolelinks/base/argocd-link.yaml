@@ -3,9 +3,9 @@ kind: ConsoleLink
 metadata:
   name: argocd
 spec:
-  href: 'https://argocd-server-argocd.apps.home.ocplab.com'
+  href: 'https://argocd-server-argocd.apps.keights.org'
   location: ApplicationMenu
   text: ArgoCD
   applicationMenu:
     section: Tools
-    imageURL: https://raw.githubusercontent.com/gnunn-gitops/cluster-config/master/docs/img/argocd-logo.png
+    imageURL: https://raw.githubusercontent.com/salanisor/cluster-config/master/docs/img/argocd-logo.png
