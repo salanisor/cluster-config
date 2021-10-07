@@ -42,3 +42,10 @@ In my original version  of this repo I was storing individual ArgoCD application
 Unfortunately ApplicationSets does not currently support sync waves which I am relying on here to deploy things like sealed-secrets and certificates before everything else. However at it's core ApplicationSets is simply a templating pattern and I opted to just replicate this on the client side. In each cluster overlay you will see a set of Argo CD applications, i.e. `clusters/home/argocd/apps/base`. These are generated using a bash script called `generate-argocd-apps.sh` with the goal to reduce the overhead of managing ArgoCD applications.
 
 Once ApplicationSets support sync waves I plan on revisiting this.
+
+# Bootstrapping ArgoCD on OpenShift
+
+~~~
+ kubectl apply -k bootstrap/openshift-gitops/openshift-gitops-operator/base
+ kubectl apply -k bootstrap/openshift-gitops/base
+~~~

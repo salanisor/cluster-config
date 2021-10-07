@@ -3,4 +3,6 @@ cloud-dns-credentials.yaml
 alertmanager.yaml
 google-secret.yaml
 *-private.yaml
-*-private.yml
+*-private.yml.DS_Store
+tls.crt
+tls.key
