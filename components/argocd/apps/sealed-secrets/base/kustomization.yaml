@@ -4,4 +4,26 @@ kind: Kustomization
 namespace: openshift-gitops
 
 resources:
+- namespace.yaml
 - sealed-secrets-app.yaml
+  
+secretGenerator:
+  - name: sealed-secrets-custom-key
+    namespace: sealed-secrets
+    type: kubernetes.io/tls
+    files:
+      - tls.crt=tls.crt
+      - tls.key=tls.key
+
+patches:
+  - patch: |-
+      apiVersion: v1
+      kind: Secret
+      metadata:
+        name: sealed-secrets-custom-key
+        namespace: sealed-secrets
+        labels:
+          sealedsecrets.bitnami.com/sealed-secrets-key: active
+          manager: controller
+          operation: Update
+generatorOptions:
