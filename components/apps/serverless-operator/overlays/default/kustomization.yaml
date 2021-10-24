@@ -10,7 +10,6 @@ commonAnnotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 
 resources:
-- namespace.yaml
 - serving.yaml
 #- operator-group.yaml
 #- github.com/redhat-cop/gitops-catalog/namespace-configuration-operator/base
