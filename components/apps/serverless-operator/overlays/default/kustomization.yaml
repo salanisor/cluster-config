@@ -3,13 +3,11 @@ kind: Kustomization
 
 namespace: knative-serving
 
-bases:
-- ../../../../../components/argocd/apps/config-serverless/base/
-
 commonAnnotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 
 resources:
+- namespace.yaml
 - serving.yaml
 #- operator-group.yaml
 #- github.com/redhat-cop/gitops-catalog/namespace-configuration-operator/base

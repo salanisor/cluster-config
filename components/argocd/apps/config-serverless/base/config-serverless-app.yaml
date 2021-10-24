@@ -12,7 +12,7 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: components/argocd/apps/config-serverless/base
+    path: components/apps/serverless-operator/overlays/default
     repoURL: https://github.com/salanisor/cluster-config.git
     targetRevision: master
   syncPolicy:
