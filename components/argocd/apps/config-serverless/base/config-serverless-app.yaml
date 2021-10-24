@@ -17,4 +17,5 @@ spec:
     targetRevision: master
   syncPolicy:
     automated:
+      allowEmpty: true
       selfHeal: true
