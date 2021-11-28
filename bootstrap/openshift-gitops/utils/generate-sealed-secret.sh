@@ -1,4 +1,8 @@
 #!/bin/bash
+# How-to install kubeseal
+# Obtain the latest from URL: https://github.com/bitnami-labs/sealed-secrets/releases/
+# wget https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.17.0/kubeseal-linux-amd64 -O kubeseal
+# sudo install -m 755 kubeseal /usr/local/bin/kubeseal
 
 if [ ! -f "variables.sh" ] ;
 then
