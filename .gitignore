@@ -1,4 +1,4 @@
-sealed-secrets-secret.yaml
+sealed-secrets-secretkey.yaml
 cloud-dns-credentials.yaml
 alertmanager.yaml
 google-secret.yaml
