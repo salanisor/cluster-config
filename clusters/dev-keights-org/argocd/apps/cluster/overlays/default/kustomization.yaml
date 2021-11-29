@@ -6,6 +6,7 @@ namespace: openshift-gitops
 resources:
 - ../../../clusterversion/base
 - ../../../../../../../components/argocd/apps/sealed-secrets/base
+- ../../../../../../../components/argocd/apps/config-custom-certs/overlays/ingress/base
 #- ../../../../../../../components/apps/serverless-operator/overlays/default
 #- ../../../../../../../components/argocd/apps/config-serverless/base
 #- ../../../../../../../components/argocd/apps/letsencrypt-certs/base
