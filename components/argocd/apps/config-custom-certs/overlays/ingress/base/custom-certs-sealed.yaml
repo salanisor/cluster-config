@@ -14,7 +14,7 @@ spec:
     data: null
     metadata:
       annotations:
-        sealedsecrets.bitnami.com/namespace-wide: "true"
+        sealedsecrets.bitnami.com/cluster-wide: "true"
       creationTimestamp: null
       name: custom-certs-default
       namespace: openshift-ingress
