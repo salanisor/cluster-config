@@ -5,5 +5,5 @@ bases:
 - ../../../../../../components/apps/sso/base
 
 resources:
-- keycloak-migration-sealed-secret.yaml
-- sso-oauth-client.yaml
+#- keycloak-migration-sealed-secret.yaml
+#- sso-oauth-client.yaml
