@@ -1,7 +1,9 @@
-apiVersion: config.openshift.io/v1
-kind: ClusterVersion
-metadata:
-  name: version
+List info regarding upstream url, current channel, available channels, and updates such as image versions and their 256sha
+
+    oc adm upgrade
+
+Update spec accordingly.
+
 spec:
   channel: stable-4.9
   clusterID: a20f1746-c785-466e-9b32-4377eb77cfc2
