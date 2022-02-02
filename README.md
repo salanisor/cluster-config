@@ -47,6 +47,6 @@ Once ApplicationSets support sync waves I plan on revisiting this.
 
 ~~~
  kubectl apply -k bootstrap/openshift-gitops/openshift-gitops-operator/base
- kubectl apply -k bootstrap/openshift-gitops/base
+ ./bootstrap.sh dev-keights-org
  kubectl -n openshift-gitops get secret openshift-gitops-cluster -o jsonpath="{.data.admin\.password}" | base64 -d
 ~~~
