@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
 - cluster-config-project.yaml
-- infrastructure-mcp.yaml
 #- sealed-secrets-namespace.yaml
 #- sealed-secrets-secretkey.yaml
 - tenants-project.yaml
