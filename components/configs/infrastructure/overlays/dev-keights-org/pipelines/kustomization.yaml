@@ -4,9 +4,9 @@ kind: Kustomization
 
 namespace: openshift-pipelines
 
-commonAnnotations:
-  argocd.argoproj.io/compare-options: IgnoreExtraneous
-  argocd.argoproj.io/sync-options: Prune=false
+#commonAnnotations:
+#  argocd.argoproj.io/compare-options: IgnoreExtraneous
+#  argocd.argoproj.io/sync-options: Prune=false
 
 bases:
 - ../../../../../argocd/apps/config-pipeline-operator/base/
