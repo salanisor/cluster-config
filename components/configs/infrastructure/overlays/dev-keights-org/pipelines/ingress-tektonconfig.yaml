@@ -1,0 +1,59 @@
+apiVersion: operator.tekton.dev/v1alpha1
+kind: TektonConfig
+metadata:
+  name: config
+  annotations:
+    argocd.argoproj.io/sync-wave: "22"
+spec:
+  addon:
+    params:
+    - name: clusterTasks
+      value: "true"
+    - name: pipelineTemplates
+      value: "true"
+  config:
+    nodeSelector:
+      matchLabels:
+        node-role.kubernetes.io/infra: ""
+    tolerations:
+    - effect: NoSchedule
+      key: infra
+      value: reserved
+    - effect: NoExecute
+      key: infra
+      value: reserved
+  dashboard:
+    readonly: false
+  params:
+  - name: createRbacResource
+    value: "true"
+  pipeline:
+    default-service-account: pipeline
+    disable-affinity-assistant: true
+    disable-creds-init: false
+    disable-home-env-overwrite: true
+    disable-working-directory-overwrite: true
+    enable-api-fields: stable
+    enable-custom-tasks: false
+    enable-tekton-oci-bundles: false
+    metrics.pipelinerun.duration-type: histogram
+    metrics.pipelinerun.level: pipeline
+    metrics.taskrun.duration-type: histogram
+    metrics.taskrun.level: task
+    params:
+    - name: enableMetrics
+      value: "true"
+    require-git-ssh-secret-known-hosts: false
+    running-in-environment-with-injected-sidecars: true
+    scope-when-expressions-to-task: false
+  profile: all
+  pruner:
+    keep: 100
+    resources:
+    - pipelinerun
+    schedule: 0 8 * * *
+  targetNamespace: openshift-pipelines
+  trigger:
+    default-service-account: pipeline
+    enable-api-fields: stable
+status: {}
