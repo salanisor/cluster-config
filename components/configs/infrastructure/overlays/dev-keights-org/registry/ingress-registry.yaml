@@ -19,4 +19,13 @@ spec:
   storage:
     pvc:
       claim:
+  nodeSelector:
+    node-role.kubernetes.io/infra: ""
+  tolerations:
+    - key: infra
+      value: reserved
+      effect: NoSchedule
+    - key: infra
+      value: reserved
+      effect: NoExecute
   unsupportedConfigOverrides: {}
