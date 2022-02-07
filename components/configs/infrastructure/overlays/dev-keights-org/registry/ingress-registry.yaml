@@ -19,6 +19,7 @@ spec:
   storage:
     pvc:
       claim:
+      storageClassName: nfs
   nodeSelector:
     node-role.kubernetes.io/infra: ""
   tolerations:
