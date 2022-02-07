@@ -8,8 +8,8 @@ commonAnnotations:
   argocd.argoproj.io/compare-options: IgnoreExtraneous
   argocd.argoproj.io/sync-options: Prune=false
 
-bases:
-- ../../../../../argocd/apps/config-pipeline-operator/base/
+#bases:
+#- ../../../../../argocd/apps/config-pipeline-operator/base/
 
 resources:
 - ingress-tektonconfig.yaml
