@@ -3,7 +3,7 @@ kind: TektonConfig
 metadata:
   name: config
   annotations:
-    argocd.argoproj.io/sync-wave: "22"
+    argocd.argoproj.io/hook: PostSync
 spec:
   addon:
     params:
