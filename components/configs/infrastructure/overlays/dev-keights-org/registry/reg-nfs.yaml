@@ -5,10 +5,10 @@ metadata:
   namespace: openshift-image-registry
 spec:
   capacity:
-    storage: 40Gi
+    storage: 100Gi
   volumeMode: Filesystem
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   persistentVolumeReclaimPolicy: Recycle
   storageClassName: nfs
   nfs:
