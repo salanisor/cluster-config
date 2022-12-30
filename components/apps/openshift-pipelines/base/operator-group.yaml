@@ -4,6 +4,4 @@ metadata:
   name: openshift-gitops
   namespace: openshift-gitops
 spec:
-  targetNamespaces:
-  - openshift-gitops
   upgradeStrategy: Default
