@@ -1,7 +1,7 @@
-apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: config-pipeline-operator
+  namespace: openshift-gitops
   annotations:
     argocd.argoproj.io/sync-wave: "21"
   labels:
@@ -12,10 +12,10 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: openshift-pipelines-operator/overlays/stable
-    repoURL: https://github.com/redhat-cop/gitops-catalog.git
-    targetRevision: main
+    path: components/apps/openshift-pipelines/base
+    repoURL: https://github.com/salanisor/cluster-config.git
+    targetRevision: openshift-virtualization
   syncPolicy:
     automated:
       prune: false
-      selfHeal: false
+      selfHeal: true
