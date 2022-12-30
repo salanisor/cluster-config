@@ -1,0 +1,14 @@
+apiVersion: hco.kubevirt.io/v1beta1
+kind: HyperConverged
+  labels:
+    app: kubevirt-hyperconverged
+  name: kubevirt-hyperconverged
+  namespace: openshift-cnv
+spec:
+  tektonPipelinesNamespace: cnv-pipelines
+  featureGates:
+    deployTektonTaskResources: true
+    enableCommonBootImageImport: true
+    nonRoot: true
+    sriovLiveMigration: true
+    withHostPassthroughCPU: false

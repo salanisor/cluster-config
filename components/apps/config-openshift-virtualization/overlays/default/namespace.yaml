@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cnv-pipelines
+  annotations:
+    openshift.io/description: Container Native Virtualization Pipelines
+    openshift.io/display-name:  cnv
