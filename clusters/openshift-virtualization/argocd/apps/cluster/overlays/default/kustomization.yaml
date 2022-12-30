@@ -6,7 +6,7 @@ namespace: openshift-gitops
 resources:
 - ../../../clusterversion/base
 #- ../../../../../../../clusters/openshift-virtualization/argocd/apps/infra-ingress/base/
-- ../../../../../../../components/argocd/apps/config-pipeline-operator/base/
+#- ../../../../../../../components/argocd/apps/config-pipeline-operator/base/
 #- ../../../../../../../components/configs/infrastructure/overlays/openshift-virtualization/registry/
 #- ../../../../../../../components/configs/infrastructure/overlays/openshift-virtualization/pipelines/
 #- ../../../../../../../components/configs/infrastructure/overlays/openshift-virtualization/monitoring/
@@ -22,7 +22,7 @@ resources:
 #- ../../../../../../../components/argocd/apps/config-console-links/base
 #- ../../../../../../../components/argocd/apps/config-helm-repos/base
 #- ../../../../../../../components/argocd/apps/config-prometheus-user-app/base
-- ../../../../../../../components/argocd/apps/config-container-security/base
+#- ../../../../../../../components/argocd/apps/config-container-security/base
 #- ../../../../../../../components/argocd/apps/config-acs/base
 #- ../../../../../../../components/argocd/apps/config-namespace-config-operator/base
 #- ../../../../../../../components/argocd/apps/config-web-terminal-operator/base
