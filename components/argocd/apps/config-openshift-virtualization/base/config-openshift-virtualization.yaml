@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: components/apps/config-openshift-virtualization/overlays/default
+    path: components/apps/config-openshift-virtualization/overlays/default/
     repoURL: https://github.com/salanisor/cluster-config.git
     targetRevision: openshift-virtualization
   syncPolicy:
