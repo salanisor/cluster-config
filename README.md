@@ -47,6 +47,14 @@ Once ApplicationSets support sync waves I plan on revisiting this.
 
 ~~~
  kubectl apply -k bootstrap/openshift-gitops/openshift-gitops-operator/base
+ # Install kustomize
+ dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+ curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
+ OR
+ dnf install snapd -y
+ systemctl enable --now snapd.socket
+ ln -s /var/lib/snapd/snap /snap
+ snap install kustomize
  ./bootstrap.sh dev-keights-org
  kubectl -n openshift-gitops get secret openshift-gitops-cluster -o jsonpath="{.data.admin\.password}" | base64 -d
 ~~~
