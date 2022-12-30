@@ -7,4 +7,3 @@ spec:
   targetNamespaces:
   - openshift-gitops
   upgradeStrategy: Default
-status: {}
