@@ -8,6 +8,7 @@ resources:
 #- ../../../../../../../clusters/openshift-virtualization/argocd/apps/infra-ingress/base/
 - ../../../../../../../components/argocd/apps/config-pipeline-operator/base/
 - ../../../../../../../components/argocd/apps/config-apiserver/base/
+- ../../../../../../../components/argocd/apps/openshift-virtualization/base/
 #- ../../../../../../../components/argocd/apps/config-openshift-virtualization/base/
 #- ../../../../../../../components/configs/infrastructure/overlays/openshift-virtualization/registry/
 #- ../../../../../../../components/configs/infrastructure/overlays/openshift-virtualization/pipelines/
