@@ -3,4 +3,4 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 
 resources:
 - hyperconvergeds.yaml
-- odf-lvm-vgnvme.yaml
+#- odf-lvm-vgnvme.yaml
